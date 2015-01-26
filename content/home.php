@@ -1,6 +1,6 @@
 <?php
 $setup = array();
-$setup['title'] = "Welcome";
+$setup['title'] = "Dashboard";
 $setup['name'] = "Home";
 $setup['description'] = "Overview";
 Design::header($setup);

@@ -41,13 +41,13 @@ class Design {
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav"> 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Tasks <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="tasks">Tasks <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="Tasks">
-                <li><a href="./bootstrap.min.css">Create new</a></li>
-                <li><a href="./bootstrap.css">List All</a></li>
+                <li><a href="' . Config::$sys_url . '/?cid=newtask">Create new</a></li>
+                <li><a href="' . Config::$sys_url . '/?cid=tasks">List All</a></li>
                 <li class="divider"></li>
-                <li><a href="./variables.less">My tasks</a></li>
-                <li><a href="./bootswatch.less">Finished tasks</a></li>
+                <li><a href="' . Config::$sys_url . '/?cid=mytasks">My tasks</a></li>
+                <li><a href="' . Config::$sys_url . '/?cid=finished">Finished tasks</a></li>
               </ul>
               <li>
               <a href="' . Config::$sys_url . '/?cid=help">Help</a>
