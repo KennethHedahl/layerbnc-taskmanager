@@ -1,5 +1,4 @@
 <?php
-$nickname = $_SESSION['nickname'];
 class Design {
 
     private function __construct() {
@@ -56,15 +55,13 @@ class Design {
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="' . Config::$sys_url . '/login.php?action=logout">Logout</a></li>
               <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">' . $nickname . ' <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">' . $_SESSION['nickname'] . ' <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="Tasks">
-                <li><a href="./bootstrap.min.css">Create new</a></li>
-                <li><a href="./bootstrap.css">List All</a></li>
+                <li><a href="' . Config::$sys_url . '/?cid=profile">My Profile</a></li>
+                <li><a href="' . Config::$sys_url . '/?cid=settings">Settings</a></li>
                 <li class="divider"></li>
-                <li><a href="./variables.less">My tasks</a></li>
-                <li><a href="./bootswatch.less">Finished tasks</a></li>
+                <li><a href="' . Config::$sys_url . '/login.php?action=logout">Logout</a></li>
               </ul>
               </li>
           </ul>
