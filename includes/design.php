@@ -1,4 +1,5 @@
 <?php
+
 class Design {
 
     private function __construct() {

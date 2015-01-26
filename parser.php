@@ -1,13 +1,12 @@
 <?php
+
 // Parserfile - Used to login users.
 $parser = true; // Tell include.php that we are about to parse, so we do not need any loginchecks here.
 include "include.php"; // Include all configs
 
 $mail = $_POST['email']; // Get email from form
-$pass = $_POST['password'] ; // Get unencrypted password from form.;
+$pass = $_POST['password']; // Get unencrypted password from form.;
 $pass_md5 = md5($pass); // Get MD5 hash from password
-
-
 // Perform SQL operations to get result from DB.
 $sql = "SELECT * FROM `" . Config::$db_users . "` WHERE `email` = '$mail' AND `password` = '$pass_md5'";
 $result = $con->query($sql);
