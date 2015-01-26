@@ -5,11 +5,7 @@ if (isset($_GET['action'])) {
     if ($action == "logout") {
         session_destroy();
         $logout = true;
-    } elseif ($action == "register") {
-        $_SESSION['xauth'] = true;
-        header("Location: index.php");
-    }
-} else {
+    } else {
     $action = "login";
 }
 ?><!DOCTYPE HTML>
