@@ -7,12 +7,12 @@ class Config {
     public static $debug = false;
 
     /** MySQL settings */
-    public static $mysql_host = "localhost";
-    public static $mysql_user = "layertask";
-    public static $mysql_pass = "Sist1hg2!";
-    public static $mysql_db = "layertask";
+    public static $mysql_host = "localhost"; // Database IP/Hostname
+    public static $mysql_user = "layertask"; // Database user
+    public static $mysql_pass = "Sist1hg2!"; // Database Password
+    public static $mysql_db = "layertask"; // Database DB name
 
     /** Database build */
-    public static $db_users = "users";
+    public static $db_users = "users"; // Usertable
 
 }
