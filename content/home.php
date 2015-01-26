@@ -11,7 +11,6 @@ This site is primarily made to manage different tasks in the LayerBNC staff-grou
 <br />
 Do you have any questions or need assistance, please contact dFine (Kenneth H.).
 
-<?php print_r($_SESSION); ?>
 
 <?php
 Design::footer();
