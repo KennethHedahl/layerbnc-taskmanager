@@ -8,6 +8,8 @@ if (isset($_GET['action'])) {
     } else {
         $action = "login";
     }
+} else {
+    $action = "login";
 }
 ?><!DOCTYPE HTML>
 <html>
@@ -95,7 +97,18 @@ if (isset($_GET['action'])) {
                 display:block;
                 padding-bottom:9px;
             }
-
+            a:link {
+                color:#666;
+                display:block;
+                padding-bottom:9px;
+                text-decoration:none;
+            }
+            a:hover {
+                color:#888;
+                display:block;
+                padding-bottom:9px;
+                text-decoration:underline;
+            }
             input[type=text],
             input[type=password] {
                 width:100%;
@@ -191,7 +204,7 @@ if (isset($_GET['action'])) {
                 </p>
             </div>
             <p class="p-container">
-                <span>Forgot password ?</span>
+                <span><a href="#">Forgot password ?</a></span>
                 <input type="submit" name="go" id="go" value="Log in">
             </p>
         </form>

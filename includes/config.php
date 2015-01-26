@@ -14,5 +14,5 @@ class Config {
 
     /** Database build */
     public static $db_users = "users"; // Usertable
-
+    public static $db_help = "help"; // Help table
 }
