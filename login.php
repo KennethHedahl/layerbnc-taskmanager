@@ -6,7 +6,8 @@ if (isset($_GET['action'])) {
         session_destroy();
         $logout = true;
     } else {
-    $action = "login";
+        $action = "login";
+    }
 }
 ?><!DOCTYPE HTML>
 <html>
@@ -171,15 +172,15 @@ if (isset($_GET['action'])) {
         <form method="POST" action="parser.php">
             <h1>LayerBNC Staff login</h1>
             <div class="inset">
-<?php
-echo '<p style="color:red;">';
-if ($action == "logout") {
-    echo "You where logged out.";
-} elseif ($action == "failed") {
-    echo "Email & Password combination doesnt match any users.";
-}
-echo '</p><br />';
-?>
+                <?php
+                echo '<p style="color:red;">';
+                if ($action == "logout") {
+                    echo "You where logged out.";
+                } elseif ($action == "failed") {
+                    echo "Email & Password combination doesnt match any users.";
+                }
+                echo '</p><br />';
+                ?>
                 <p>
                     <label for="email">EMAIL ADDRESS</label>
                     <input type="text" name="email" id="email">
