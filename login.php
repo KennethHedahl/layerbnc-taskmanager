@@ -13,6 +13,7 @@ if (isset($_GET['action'])) {
 } else {
     $action = "login";
 }
+
 ?><!DOCTYPE HTML>
 <html>
     <head>
@@ -25,7 +26,8 @@ if (isset($_GET['action'])) {
                 font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
                 color:white;
                 font-size:12px;
-                background:#333 ;
+                background:#333;
+                color:white;
             }
 
             form {
@@ -37,6 +39,7 @@ if (isset($_GET['action'])) {
                 overflow:hidden;
                 position:relative;
                 box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+                color:white;
             }
 
             form:after {
@@ -108,6 +111,7 @@ if (isset($_GET['action'])) {
                     0 1px 0 rgba(255,255,255,0.1);
                 border-radius:0.3em;
                 margin-bottom:20px;
+                color:white;
             }
 
             label[for=remember]{
