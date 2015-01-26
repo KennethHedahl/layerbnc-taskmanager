@@ -7,7 +7,6 @@ if (isset($_GET['cid'])) {
     $page = "home";
 }
 $file = $page . ".php"; // Set filename
-
 if (FILE_EXISTS("content/$file")) { // Check if the file actually exists
 include 'content/' . $file; // It does! Lets call that page for display!
 } else { // Okay, it didnt, so lets throw an error to the visitor, and stop further execution.
