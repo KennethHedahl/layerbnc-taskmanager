@@ -15,3 +15,5 @@ Changelog:
 26/01-2015 - Added register command to login.php?action=register for templogin during debug.
 
 26/01-2015 - Removed Register command, since we now have working login.
+
+26/01-2015 - Added help-page, and styled Q/A's in bootstrap-dropdown like menu.
