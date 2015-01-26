@@ -51,8 +51,11 @@ class Design {
               </ul>
               <li>
               <a href="' . Config::$sys_url . '/?cid=help">Help</a>
-              </li>
-            </li>
+              </li>';
+              if ($_SESSION['level'] > 50) {
+                  echo '<li><a href="' . Config::$sys_url . '/?cid=admin">Administration</a></li>';
+              }
+            echo '</li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">

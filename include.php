@@ -19,5 +19,13 @@ if ($parser == false) { // If we are the parser, dont check if users are logged 
     if (!isset($_SESSION['xauth'])) {
         header('Location: ' . Config::$sys_url . '/login.php');
         die("Please enable redirects in your browser to use this site.");
+    } else { // Update accessflags as we go. Useful is you often edit user permissions and groups.
+        $sql = "SELECT * FROM `" . Config::$db_users . "` WHERE `nickname` = '" . $_SESSION['nickname'] . "'";
+        $result = $con->query($sql);
+        $sqlresult = $result->fetch_object(); // Get the result
+        $_SESSION['xuser'] = $sqlresult->email;
+        $_SESSION['xname'] = $sqlresult->name;
+        $_SESSION['nickname'] = $sqlresult->nickname;
+        $_SESSION['level'] = $sqlresult->level;
     }
 }

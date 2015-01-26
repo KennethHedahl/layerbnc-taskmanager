@@ -18,6 +18,7 @@ if ($rows == 1) { // Success! A row was found, thus a matching user!
     $_SESSION['xuser'] = $sqlresult->email;
     $_SESSION['xname'] = $sqlresult->name;
     $_SESSION['nickname'] = $sqlresult->nickname;
+    $_SESSION['level'] = $sqlresult->level;
     header('Location: ' . Config::$sys_url . '/?cid=home'); // Send user to logged in homepage.
     die('Error, please enable redirects in your browser.');
 } else {
