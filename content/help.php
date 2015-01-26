@@ -13,13 +13,13 @@ $db = $con->query($sql);
 while ($result = $db->fetch_object()) {
     echo '<div class="panel panel-default panel-faq">
     <div class="panel-heading">
-        <a data-toggle="collapse" data-parent="#accordion-cat-18" href="#faq-cat-18-sub-18">
+        <a data-toggle="collapse" data-parent="#accordion-cat-' . $result->id . '" href="#faq-cat-' . $result->id . '-sub-' . $result->id . '">
             <h4 class="panel-title">
                 ' . $result->title . ' <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
             </h4>
         </a>
     </div>
-    <div id="faq-cat-18-sub-18" class="panel-collapse collapse">
+    <div id="faq-cat-' . $result->id . '-sub-' . $result->id . '" class="panel-collapse collapse">
         <div class="panel-body">
             ' . $result->content . ' </div>
     </div>
