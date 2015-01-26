@@ -20,4 +20,3 @@ if (!isset($_SESSION['xauth'])) {
     header('Location: ' . Config::$sys_url . '/login.php');
     die("Please enable redirects in your browser to use this site.");
 }
-
