@@ -13,7 +13,6 @@ if (isset($_GET['action'])) {
 } else {
     $action = "login";
 }
-
 ?><!DOCTYPE HTML>
 <html>
     <head>
